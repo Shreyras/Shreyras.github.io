@@ -16,11 +16,11 @@
 #Wall Images/gifs
 #use image_id="Wall_Images" on object Wall_Screens
 <AssetImage id="Wall_Images" src="changeme.png" />
-#Wall Websurface 
+#Wall Websurface
 #Use websurface_id="Wall_Web" on Wall_Screens
 #width and height dicate the screen resolution.
 <AssetWebSurface id="Wall_Web" src="http://www.insert360webpagehere.com" width="2000" height="1000" />
-#Wall Video/Webm 
+#Wall Video/Webm
 #Use websurface_id="Wall_Video" on Wall_Screens
 <AssetVideo id="Wall_Video" src="insertfilehere.mp4" auto_play="true" loop="true" />
 </Assets>
@@ -35,6 +35,10 @@
 </Room>
 </FireBoxRoom>
 </janus-viewer>
-
+<script>
+var images=["changeme.png", "download.png"];
+var randomNum=Math.floor(Math.random()*2);
+document.querySelector("#Wall_Images").src=images[randomNum];
+</script>
 </body>
 </html>
